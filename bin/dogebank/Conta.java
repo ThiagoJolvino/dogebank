@@ -1,15 +1,13 @@
-package dogebank;
-
 public class Conta {
 	private double saldo;
 	private int agencia;
 	private int numero;
 	private Cliente titular;
-	private static int total;
+	private int total;
 	
 	public Conta(int agencia, int numero) {
-		Conta.total++;
-		System.out.println("O total é de contas é "+ total);
+		total++;
+		System.out.println("O total éde contas é "+ total);
 		this.agencia = agencia;
 		this.numero = numero;
 		System.out.println("Estou criando uma conta");
@@ -62,9 +60,5 @@ public class Conta {
 	}
 	public Cliente getTitular() {
 		return titular;
-	}
-	
-	public static int getTotal() {
-		return Conta.total;
 	}
 }
